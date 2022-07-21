@@ -1,19 +1,19 @@
 # possible values for registers 150 and 151
 
-"EFFECTOR" : 
-       "registerID" : 150
-       "value" : 
-            "NONE" : 1
-            "WEB_C_DRILLING" : 2
-            "FLANGE_C_DRILLING" : 3
-            "WEB_C_FASTENING_RIVET" : 4
-            "WEB_C_FASTENING_LGP" : 5
-            "FLANGE_C_FASTENING_LGP" : 6 
-"CUTTING TOOL" : 
-       "registerID" : 151
-       "value" :  
-            "NONE" : 1
-            "E53233043200" : 2
-            "ASNA2392-3-04" : 3
-            "ASNA2392-3-05" : 4
-            "ASNA2392-3-07" : 5
+EFFECTOR : 
+  registerID : 150
+  references : 
+    NONE : 1
+    WEB_C_DRILLING : 2
+    FLANGE_C_DRILLING : 3
+    WEB_C_FASTENING_RIVET : 4
+    WEB_C_FASTENING_LGP : 5
+    FLANGE_C_FASTENING_LGP : 6 
+CUTTING TOOL : 
+  registerID : 151
+  references :  
+    NONE : 1
+    E53233043200 : 2
+    ASNA2392-3-04 : 3
+    ASNA2392-3-05 : 4
+    ASNA2392-3-07 : 5
