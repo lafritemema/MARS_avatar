@@ -2,10 +2,11 @@ import pika, sys, os, json
 from pika.spec import BasicProperties
 import yaml
 import requests
+import time
 
 AMQP_SERVER = 'debianvm'
 AMQP_EXCHANGE = 'mars'
-TEMPO = 10
+TEMPO = 3
 
 PROXY_HOST = '127.0.0.1'
 PROXY_PORT = 8000
@@ -78,7 +79,7 @@ def callback(ch, method, properties, msg):
           eq_code, register = get_para_for_eq(manipulation,
                                               eq_type,
                                               eq_ref)
-          # time.sleep(TEMPO)
+          time.sleep(TEMPO)
 
           #build url for proxy request
           url = URL+build_query(register)
